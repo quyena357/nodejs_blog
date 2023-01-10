@@ -12,8 +12,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Middleware for POST method
 app.use(
-      express.urlencoded({
-        extended: true,
+                express.urlencoded({
+          extended: true,
     }),
 );
 app.use(express.json());
