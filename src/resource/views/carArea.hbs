@@ -6,7 +6,6 @@
             <th scope="col">License Number</th>
             <th scope="col">Registered</th>
             <th scope="col">Type</th>
-            <th scope="col">Owner</th>
             </tr>
         </thead>
         {{#each carInfos}}
@@ -16,8 +15,6 @@
             <td>{{this.licenseNum}}</td>
             <td class="registered" >{{this.registered}}</td>
             <td>{{this.type}}</td>
-            <td>{{this.owner}}</td>
-            <td></td>
             </tr>
         </tbody>
         {{/each}}
@@ -25,11 +22,11 @@
 </div>
 
 <script>
-    var orderCarInfors = document.getElementsByClassName('order');
+    var orderCarAreas = document.getElementsByClassName('order');
     var i = 0;
-    for (let i = 0; i < orderCarInfors.length; i++) 
+    for (let i = 0; i < orderCarAreas.length; i++) 
     {
-        orderCarInfors[i].innerHTML = i + 1;
+        orderCarAreas[i].innerHTML = i + 1;
     }
 
     var registeredCarInfors = document.getElementsByClassName('registered');
